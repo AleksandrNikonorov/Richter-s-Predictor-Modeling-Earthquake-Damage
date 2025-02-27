@@ -1,40 +1,40 @@
-# Проект: Предсказание ущерба зданиям в Непале от землетрясения 2015 года
+# Project: Predicting Damage to Buildings in Nepal from the 2015 Earthquake
 
-## Описание проекта
+## Project Description
 
-Этот проект нацелен на предсказание степени повреждений зданий в Непале после землетрясения 2015 года. Используются данные с соревнования [DrivenData](https://www.drivendata.org/competitions/57/nepal-earthquake/), где предоставлены детализированные сведения о зданиях, их конструкционных особенностях и закодированном местоположении.
+This project is aimed at predicting the degree of damage to buildings in Nepal following the 2015 earthquake. It utilizes data from the [DrivenData](https://www.drivendata.org/competitions/57/nepal-earthquake/) competition, which provides detailed information about the buildings, their structural characteristics, and encoded locations.
 
-## Основные этапы проекта
+## Key Project Stages
 
-1. **Предобработка данных:**
-   - Обработка закодированных местоположений зданий с применением методов автоматизированного feature engineering.
-   - Работа с категориальными и числовыми признаками для подготовки данных к обучению.
+1. **Data Preprocessing:**
+   - Processing encoded building locations using automated feature engineering methods.
+   - Working with both categorical and numerical features to prepare the data for model training.
 
-2. **Автоматизированное Feature Engineering:**
-   Использованы методы автоматической генерации новых признаков для повышения качества предсказаний, особенно для работы с закодированными признаками местоположения зданий.
+2. **Automated Feature Engineering:**
+   - Employing techniques to automatically generate new features, which enhances prediction quality, especially when dealing with encoded building location data.
 
-3. **Моделирование:**
-   - Реализован кастомный класс для подбора и тестирования различных моделей машинного обучения.
-   - Включена функциональность для автоматической оценки различных моделей и гиперпараметров с использованием кросс-валидации.
-   - Оценка производительности моделей с использованием метрик точности и F1-score.
+3. **Modeling:**
+   - Implementation of a custom class for selecting and testing various machine learning models.
+   - Incorporation of functionality for automatically evaluating different models and hyperparameters using cross-validation.
+   - Model performance is assessed using accuracy metrics and the F1-score.
 
-4. **Результаты:**
-   - Финальная модель была выбрана с учётом точности предсказаний на тестовой выборке.
-   - Сформированы предсказания для финального submission на DrivenData.
+4. **Results:**
+   - The final model was selected based on its prediction accuracy on the test set.
+   - Predictions were generated for the final submission to DrivenData.
 
-## Используемые библиотеки
+## Libraries Used
 
-Проект выполнен с использованием следующих библиотек:
+The project is implemented using the following libraries:
 
-- `pandas` — для обработки данных.
-- `numpy` — для вычислений.
-- `scikit-learn` — для реализации моделей машинного обучения и подбора гиперпараметров.
-- `catboost` — для работы с категориальными признаками и эффективного моделирования.
-- `keras` — для автоматического создания новых признаков.
+- `pandas` — for data processing.
+- `numpy` — for numerical computations.
+- `scikit-learn` — for machine learning model implementation and hyperparameter tuning.
+- `catboost` — for handling categorical features and effective modeling.
+- `keras` — for automated feature generation.
 
-## Структура проекта
+## Project Structure
 
-- `Initial analysis. Report.pdf` — Аналитический отчет по предметной области с графиками и описаниями некоторых фичей. Основные идеи
-- `Preprocessing and model selection class` — исходный код проекта, включая класс для подбора и тестирования моделей.
-- `README.md` — описание проекта.
+- `Initial analysis. Report.pdf` — An analytical report on the domain, including graphs and descriptions of some features along with the main ideas.
+- `Preprocessing and model selection class` — The source code of the project, including the class for selecting and testing models.
+- `README.md` — A description of the project.
 
